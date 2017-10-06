@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button saveBtn = (Button) findViewById(R.id.save);
-        Button searchBtn = (Button) findViewById(R.id.searchByName);
+        Button searchBtn = (Button) findViewById(R.id.searchByEmail);
 
         final EditText editName = (EditText) findViewById(R.id.editName);
         final EditText editEmail = (EditText) findViewById(R.id.editEmail);

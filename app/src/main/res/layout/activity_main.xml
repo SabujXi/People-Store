@@ -38,7 +38,7 @@
         android:text="Save" />
 
     <Button
-        android:id="@+id/searchByName"
+        android:id="@+id/searchByEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Search By Email" />
