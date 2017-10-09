@@ -2,6 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.sabuj.sqlitepart1">
 
+
+    <permission
+        android:name="me.sabuj.sandroprovider1.READ_PERMISSION"
+        android:protectionLevel="normal" />
+
+    <permission
+        android:name="me.sabuj.sandroprovider1.WRITE_PERMISSION"
+        android:protectionLevel="normal" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +25,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <provider
+            android:name=".SandroProvider"
+            android:authorities="me.sabuj.sandroprovider1.SANDRO_PROVIDER1"
+            android:enabled="true"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            android:readPermission="me.sabuj.sandroprovider1.READ_PERMISSION"
+            android:writePermission="me.sabuj.sandroprovider1.WRITE_PERMISSION"/>
     </application>
 
 </manifest>
